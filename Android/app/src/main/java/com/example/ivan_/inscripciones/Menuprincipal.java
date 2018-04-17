@@ -87,7 +87,7 @@ public class Menuprincipal extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    setContentView(R.layout.activity_menuprincipal);
+    setContentView(R.layout.activity_intropassword);
 
     mVisible = true;
     mControlsView = findViewById(R.id.fullscreen_content_controls);
