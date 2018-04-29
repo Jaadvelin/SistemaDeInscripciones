@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* CSS */
+
+.main-text{
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;;
+  font-size: 1em;
+
+}
+
+.container{
+    display:block;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    height: 1000px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 1em;
+    background-color:#223F92;
+    color: white;
+}
+
+
+.img{
+  size:20%;
+  max-width: 200px;
+}
+
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #CC3333;
+}
+
+aside{
+  background-color: green;
+  float:right;
+}
+
+select{
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   border:none;
+   margin:4px;
+}
