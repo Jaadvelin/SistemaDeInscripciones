@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* CSS */
+
+.main-text{
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;;
+  font-size: 1em;
+
+}
+
+.container{
+    display:block;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.blue { color: #223F92; }
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 1em;
+    /*background-color:#223F92;*/
+    color: white;
+}
+
+span.tab-space {
+  word-spacing:5em;
+}
+
+.img{
+  size:20%;
+  max-width: 200px;
+}
+
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #CC3333;
+}
+
+aside{
+  background-color: green;
+  float:right;
+}
+
+select{
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   border:none;
+   margin:4px;
+}

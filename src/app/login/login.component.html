@@ -1,0 +1,52 @@
+<div >  <!--contenido -->
+    <br>
+    <h3 style="color:#223F92">Sistema de inscripciones</h3>
+    
+    <img src="assets/images/logo.png" alt="Logo ITESM" width="50%" style="max-width:200px">
+    <form method="post" name="myemailform" action="email-form.php">
+        <br>
+        <a>Usuario</a> <br>
+        <input type="text" name="matricula" placeholder="A01234567"><br>
+	
+        <a>Contraseña</a> <br>
+        <input type="password" name="contrasena" placeholder="********"><br><br>
+        <button type="button" class="btn btn-primary" style="background-color: #223F92" (click)="login($event)">Entrar</button>
+    </form>
+</div>
+
+<div class="bottomright"> <!--Periodo y campus-->
+    
+    <!-- Periodo -->
+    <div class="btn-group dropup" class="cart pull-right">
+        <button type="button" class="btn btn-secondary btn-sm" style="background-color:#223F92">
+            Periodo
+        </button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#223F92">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+            <!-- Dropdown menu links -->
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+    
+    <br>
+    
+    <!-- Campus -->
+    <div class="btn-group dropup">
+        <button type="button" class="btn btn-secondary btn-sm" style="background-color:#223F92">
+            Campus
+        </button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#223F92">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+            <!-- Dropdown menu links -->
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+</div>

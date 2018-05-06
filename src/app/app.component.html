@@ -1,1 +1,35 @@
-Foo Bar
+<!--Barra de navegacion-->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#223F92" *ngIf="user.valid">
+    <img src="assets/images/logo2.png" alt="Logo ITESM" width="40px" style="max-width:200px">
+    <a class="navbar-brand" routerLink="/" style="padding-left:1em">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+		<a class="nav-link" routerLink="/schedule">Horario</a>
+            </li>
+            <li class="nav-item active">
+		<a class="nav-link" routerLink="/services">Servicios</a>
+            </li>
+            <li class="nav-item active">
+		<a class="nav-link" routerLink="/registry">Registro</a>
+            </li>
+			            <li class="nav-item active">
+		<a class="nav-link" routerLink="/payments">Pagos</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0"style="padding-right:3em">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-light btn-sm my-2 my-sm-0 " type="submit" >Búsqueda</button>
+        </form>
+        <button class="btn btn-outline-light btn-sm my-2 my-sm-0" type="submit">Cerrar sesión</button>
+    </div>
+</nav>
+<div class="container">
+    <!-- Page Content goes here -->
+    <router-outlet *ngIf="user.valid"></router-outlet>
+    <app-login (auth)="onAuth($event)" *ngIf="!user.valid"></app-login>
+</div>
